@@ -1,0 +1,37 @@
+@ADDR=http://8.130.127.54i:8081
+
+### 访问首页面
+GET {{ADDR}}/
+Accept: application/json
+
+### 添加一本书
+POST {{ADDR}}/api/books
+Content-Type: application/json
+
+{
+  "title": "三体",
+  "author": "刘慈欣"
+}
+
+### 获取所有书籍
+GET {{ADDR}}/api/books
+
+### 获取一本书
+GET {{ADDR}}/api/books/1
+
+### 根据标题搜索书籍
+GET {{ADDR}}/api/books/title/三体
+
+
+### 修改一本书
+PUT {{ADDR}}/api/books/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "《三体3》",
+  "author": "刘慈欣"
+}
+
+### 删除一本书
+DELETE {{ADDR}}/api/books/1

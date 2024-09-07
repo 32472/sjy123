@@ -1,0 +1,9 @@
+com\example\demo\SimpleController.class
+com\example\demo\Book.class
+com\example\demo\Application.class
+com\example\demo\security\SecurityConfig.class
+com\example\demo\BookRepository.class
+com\example\demo\RestExceptionHandler.class
+com\example\demo\BookController.class
+com\example\demo\BookNotFoundException.class
+com\example\demo\BookIdMismatchException.class
